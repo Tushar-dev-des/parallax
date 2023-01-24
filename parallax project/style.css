@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, #cfdbdd 100%);
+    
+}
+
+
+
+nav {
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.24) 100%);
+    /* background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.738) 19%, rgba(0, 0, 0, 0.541) 34%, rgba(0, 0, 0, 0.382) 47%, rgba(0, 0, 0, 0.278) 56.5%, rgba(0, 0, 0, 0.194) 65%, rgba(0, 0, 0, 0.126) 73%, rgba(0, 0, 0, 0.075) 80.2%, rgba(0, 0, 0, 0.042) 86.1%, rgba(0, 0, 0, 0.021) 91%, rgba(0, 0, 0, 0.008) 95.2%, rgba(0, 0, 0, 0.002) 98.2%, transparent 100%); */
+}
+
+
+.navicon {
+    height: 3rem;
+    width: 3rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#logo h1 {
+    font-family: 'Gilroy';
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 6px;
+    font-weight: 600;
+    color: white;
+}
+
+#parallax {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width: 100vw; */
+    overflow: hidden;
+    /* object-position: center; */
+}
+
+#img3, #img2, #img1 {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#img3 {
+    background-image: url('assets/landscape_background_small.jpg');
+}
+#img2 {
+    background-image: url('assets/landscape_andy.png');
+}
+#img1 {
+    background-image: url('assets/landscape_mountain_small.png');
+}
+
+/* #parallax img {
+    position: absolute;
+    top: -14%;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+
+} */
+
+#bottomgrad {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 40vh;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    /* z-index: 100; */
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    gap: 2rem;
+}
+
+#links_card {
+    height: 50vh;
+    width: 264px;
+    background-color: #000000;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#links_card :hover {
+
+}
+
+#links_card img {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.andy {
+    background-image: url('assets/landscape_background_small.jpg');
+}
+.felan {
+    background-image: url('assets/felan-bg-560x800.jpg');
+}
+.education {
+    background-image: url('assets/education-bg-560x800.jpg');
+}
+.presets {
+    background-image: url('assets/presets-bg-560x800.jpg');
+}
+
+#about {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+
+
+#aboutinfo {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding: 0 3rem; */
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    /* padding: 40rem 2rem 0 2rem; */
+    width: 820px;
+    /* height: 100vh; */
+    /* background-color: aqua; */
+}
+
+#aboutinfo h1 {
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.8px;
+    /* text-align: center; */
+}
+
+#aboutimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('assets/about-bg2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
